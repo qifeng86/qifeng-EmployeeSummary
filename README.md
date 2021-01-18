@@ -22,6 +22,7 @@ This a command line application that will prompt the user for infromation about 
 Install the following dependencies:
 
 - `npm inquirer`
+- `npm install file-system --save`
 - `npm install --save-dev jest`
 
 
