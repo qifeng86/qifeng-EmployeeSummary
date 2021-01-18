@@ -27,7 +27,7 @@ Install the following dependencies:
 
 # Usage
 
-run node index.js
+![alt text](image.jpg)
 
 # License
 
