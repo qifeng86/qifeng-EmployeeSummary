@@ -6,7 +6,7 @@
 
 # Description
 
-You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+This a command line application that will prompt the user for infromation about team members. The user can input any number of team members and they may be a mix of managers, engineers, and interns.
 
 # Table of Contents
 * [Description](#description)
