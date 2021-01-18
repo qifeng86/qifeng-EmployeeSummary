@@ -19,7 +19,7 @@ This a command line application that will prompt the user for infromation about 
 
 # Installation
 
-Install the following dependencies:
+This application requires node.js to be installed in order to provide backend runtime for javasript with the following dependencies:
 
 - `npm inquirer`
 - `npm install --save-dev jest`
