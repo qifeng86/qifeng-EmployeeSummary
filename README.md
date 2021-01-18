@@ -43,7 +43,7 @@ Qi Feng
 - Javascript
 - Node.js
 - npm packages
-  - Inquier
+  - Inquirer
   - Fs
   - Jest
   
