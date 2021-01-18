@@ -32,7 +32,7 @@ Install the following dependencies:
 
 # License
 
-This application is licensed under the MIT
+This application is licensed under [MIT](https://github.com/qifeng86/qifeng-EmployeeSummary/blob/main/LICENSE)
 
 # Contributing
 
