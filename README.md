@@ -6,7 +6,7 @@
 
 # Description
 
-This a command line application that will prompt the user for infromation about team members. The user can input any number of team members and they may be a mix of managers, engineers, and interns.
+This a command line application that will prompt the user for infromation about team members. The user can input any number of team members and they may be a mix of managers, engineers and interns. Application will automatically output employee summary on a HTML page with card style when the user is done entering information. Specific employee information will be displayed based on employee's job role.
 
 # Table of Contents
 * [Description](#description)
