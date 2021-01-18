@@ -27,7 +27,7 @@ Install the following dependencies:
 
 # Usage
 
-![alt text](image.jpg)
+![alt text](https://github.com/qifeng86/qifeng-EmployeeSummary/blob/main/demo.gif)
 
 # License
 
