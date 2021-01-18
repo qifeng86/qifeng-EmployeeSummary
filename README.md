@@ -38,10 +38,15 @@ This application is licensed under the MIT
 
 Qi Feng
 
-# Test
-
-
-Answer each question and verify your answers in auto generated readme file
+# Built with
+HTML
+Javascript
+Node.js
+npm packages
+  Inquier
+  Fs
+  Jest
+  
 
 
 # Questions
