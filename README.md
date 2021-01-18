@@ -39,13 +39,13 @@ This application is licensed under the MIT
 Qi Feng
 
 # Built with
-HTML
-Javascript
-Node.js
-npm packages
-  Inquier
-  Fs
-  Jest
+-HTML
+-Javascript
+-Node.js
+-npm packages
+  -Inquier
+  -Fs
+  -Jest
   
 
 
