@@ -23,6 +23,7 @@ Install the following dependencies:
 
 
 npm inquirer
+npm install --save-dev jest
 
 
 # Usage
