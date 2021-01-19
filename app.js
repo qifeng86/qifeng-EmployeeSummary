@@ -24,7 +24,7 @@ function fsWriteTo() {
     fs.writeFile(outputPath, data, (err) => err ? console.log(err) : console.log('Profile has been created!'));
 }
 
-// Initial inquirer prompt to determine employee type
+// Ask user to choose employee's job role
 
 function roleQuestion() {
     inquirer
@@ -37,7 +37,7 @@ function roleQuestion() {
             },
         ])
         .then(data => {
-            //prompt individual with follow up questions based on job role choice
+            //prompt user with follow up questions based on job role choice
             switch (data.role) {
 
                 case "Manager":
@@ -96,7 +96,7 @@ function intern() {
             profile.push(intern);
 
 
-            //If individual chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
+            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
@@ -148,7 +148,7 @@ function engineer() {
             profile.push(engineer);
 
 
-            //If individual chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
+            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
@@ -201,7 +201,7 @@ function manager() {
             profile.push(manager);
 
 
-            //If individual chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
+            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
