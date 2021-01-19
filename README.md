@@ -27,7 +27,7 @@ This application requires node.js to be installed in order to provide backend ru
 
 # Usage
 
-![alt text](https://github.com/qifeng86/qifeng-EmployeeSummary/blob/main/demo.gif)
+![alt text](https://github.com/qifeng86/qifeng-TemplateEngine-EmployeeSummary/blob/main/demo.gif)
 
 # License
 
