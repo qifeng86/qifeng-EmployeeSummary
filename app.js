@@ -12,14 +12,19 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 
-// Write code to use inquirer to gather information about the development team members,
+
+
+// Create a dynamic array
+let profile = [];
+
+// Render inputs to an array and write to team.html 
+function fsWriteTo() {
+    const data = render(profile);
+    fs.writeFile(outputPath, data, (err) => err ? console.log(err) : console.log('Profile has been created!'));
+}
 
 // Initial inquirer prompt to determine employee type
 
-let profile = [];
-
-
-// prompt individual with question about job role
 function roleQuestion() {
     inquirer
         .prompt([
@@ -90,12 +95,11 @@ function intern() {
             profile.push(intern);
 
 
-            //If individual chooses to add more employee, prompt the job role question again. otherwise render  array to html
+            //If individual chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
-                const data = render(profile);
-                fs.writeFile(outputPath, data, (err) => err ? console.log(err) : console.log('Profile has been created!'));
+                fsWriteTo();
             }
         })
 }
@@ -143,12 +147,11 @@ function engineer() {
             profile.push(engineer);
 
 
-            //If individual chooses to add more employee, prompt the job role question again. otherwise render array to html
+            //If individual chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
-                const data = render(profile);
-                fs.writeFile(outputPath, data, (err) => err ? console.log(err) : console.log('Profile has been created!'));
+                fsWriteTo();
             }
         })
 }
@@ -197,12 +200,11 @@ function manager() {
             profile.push(manager);
 
 
-            //If individual chooses to add more employee, prompt the job role question again. otherwise render array to html
+            //If individual chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
-                const data = render(profile);
-                fs.writeFile(outputPath, data, (err) => err ? console.log(err) : console.log('Profile has been created!'));
+                fsWriteTo();
             }
 
         })
