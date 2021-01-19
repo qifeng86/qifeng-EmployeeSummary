@@ -62,24 +62,24 @@ function intern() {
             {
                 type: 'input',
                 name: 'intern',
-                message: 'What is your name?',
+                message: "What is employee's name?",
             },
             {
                 type: 'input',
                 name: 'id',
-                message: 'What is your employee id?',
+                message: "What is employee's id?",
 
             },
             {
                 type: 'input',
                 name: 'email',
-                message: 'What is your email?',
+                message: "What is employee's email?",
 
             },
             {
                 type: 'input',
                 name: 'school',
-                message: 'What is your school?',
+                message: "What is employee's school?",
 
             },
             {
@@ -112,25 +112,25 @@ function engineer() {
             {
                 type: 'input',
                 name: 'engineer',
-                message: 'What is your name?',
+                message: "What is employee's name?",
 
             },
             {
                 type: 'input',
                 name: 'id',
-                message: 'What is your employee id?',
+                message: "What is employee's id?",
 
             },
             {
                 type: 'input',
                 name: 'email',
-                message: 'What is your email?',
+                message: "What is employee's email?",
 
             },
             {
                 type: 'input',
                 name: 'github',
-                message: 'What is your github username?',
+                message: "What is employee's github username?",
 
             },
             {
@@ -164,25 +164,25 @@ function manager() {
             {
                 type: 'input',
                 name: 'manager',
-                message: 'What is your name?',
+                message: "What is employee's name?",
 
             },
             {
                 type: 'input',
                 name: 'id',
-                message: 'What is your employee id?',
+                message: "What is employee's id?",
 
             },
             {
                 type: 'input',
                 name: 'email',
-                message: 'What is your email?',
+                message: "What is employee's email?",
 
             },
             {
                 type: 'input',
                 name: 'officeNumber',
-                message: 'What is your office number?',
+                message: "What is employee's office number?",
 
             },
             {
