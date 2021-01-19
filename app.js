@@ -49,112 +49,11 @@ function roleQuestion() {
                 case "Intern":
                     intern();
                     break;
+
+
             }
 
         });
-}
-
-
-// Questions for intern
-function intern() {
-    inquirer
-        .prompt([
-
-            {
-                type: 'input',
-                name: 'intern',
-                message: "What is employee's name?",
-            },
-            {
-                type: 'input',
-                name: 'id',
-                message: "What is employee's id?",
-
-            },
-            {
-                type: 'input',
-                name: 'email',
-                message: "What is employee's email?",
-
-            },
-            {
-                type: 'input',
-                name: 'school',
-                message: "What is employee's school?",
-
-            },
-            {
-                type: 'confirm',
-                name: 'addMore',
-                message: 'Do you want to add more employee?',
-            },
-
-        ])
-        .then(data => {
-            //Add inputs to the array
-            const intern = new Intern(data.intern, data.id, data.email, data.school);
-            profile.push(intern);
-
-
-            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
-            if (data.addMore === true) {
-                roleQuestion();
-            } else {
-                fsWriteTo();
-            }
-        })
-}
-
-// Questions for engineer
-function engineer() {
-    inquirer
-        .prompt([
-
-            {
-                type: 'input',
-                name: 'engineer',
-                message: "What is employee's name?",
-
-            },
-            {
-                type: 'input',
-                name: 'id',
-                message: "What is employee's id?",
-
-            },
-            {
-                type: 'input',
-                name: 'email',
-                message: "What is employee's email?",
-
-            },
-            {
-                type: 'input',
-                name: 'github',
-                message: "What is employee's github username?",
-
-            },
-            {
-                type: 'confirm',
-                name: 'addMore',
-                message: 'Do you want to add more employee?',
-
-            },
-
-        ])
-        .then(data => {
-            //Add inputs to the array
-            const engineer = new Engineer(data.engineer, data.id, data.email, data.github);
-            profile.push(engineer);
-
-
-            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
-            if (data.addMore === true) {
-                roleQuestion();
-            } else {
-                fsWriteTo();
-            }
-        })
 }
 
 // Questions for manager
@@ -210,5 +109,109 @@ function manager() {
 
         })
 }
+
+
+
+// Questions for engineer
+function engineer() {
+    inquirer
+        .prompt([
+
+            {
+                type: 'input',
+                name: 'engineer',
+                message: "What is employee's name?",
+
+            },
+            {
+                type: 'input',
+                name: 'id',
+                message: "What is employee's id?",
+
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: "What is employee's email?",
+
+            },
+            {
+                type: 'input',
+                name: 'github',
+                message: "What is employee's github username?",
+
+            },
+            {
+                type: 'confirm',
+                name: 'addMore',
+                message: 'Do you want to add more employee?',
+
+            },
+
+        ])
+        .then(data => {
+            //Add inputs to the array
+            const engineer = new Engineer(data.engineer, data.id, data.email, data.github);
+            profile.push(engineer);
+
+
+            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
+            if (data.addMore === true) {
+                roleQuestion();
+            } else {
+                fsWriteTo();
+            }
+        })
+}
+// Questions for intern
+function intern() {
+    inquirer
+        .prompt([
+
+            {
+                type: 'input',
+                name: 'intern',
+                message: "What is employee's name?",
+            },
+            {
+                type: 'input',
+                name: 'id',
+                message: "What is employee's id?",
+
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: "What is employee's email?",
+
+            },
+            {
+                type: 'input',
+                name: 'school',
+                message: "What is employee's school?",
+
+            },
+            {
+                type: 'confirm',
+                name: 'addMore',
+                message: 'Do you want to add more employee?',
+            },
+
+        ])
+        .then(data => {
+            //Add inputs to the array
+            const intern = new Intern(data.intern, data.id, data.email, data.school);
+            profile.push(intern);
+
+
+            //If user chooses to add more employee, prompt the job role question again. otherwise render inputs to an array and write to team.html
+            if (data.addMore === true) {
+                roleQuestion();
+            } else {
+                fsWriteTo();
+            }
+        })
+}
+
 
 roleQuestion();
