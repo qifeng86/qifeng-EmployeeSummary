@@ -85,12 +85,12 @@ function intern() {
 
         ])
         .then(data => {
-            //Add inputs to the profile array
+            //Add inputs to the  array
             const intern = new Intern(data.intern, data.id, data.email, data.school);
             profile.push(intern);
 
 
-            //If individual choose to add more employee, prompt the job role question. otherwise render profile array to html
+            //If individual chooses to add more employee, prompt the job role question again. otherwise render  array to html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
@@ -138,12 +138,12 @@ function engineer() {
 
         ])
         .then(data => {
-            //Add new inputs to the profile array
+            //Add new inputs to the array
             const engineer = new Engineer(data.engineer, data.id, data.email, data.github);
             profile.push(engineer);
 
 
-            //If individual choose to add more employee, prompt the job role question. otherwise render profile array to html
+            //If individual chooses to add more employee, prompt the job role question again. otherwise render array to html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
@@ -192,12 +192,12 @@ function manager() {
         ])
         .then(data => {
 
-            //Add new inputs to the profile array
+            //Add new inputs to the array
             const manager = new Manager(data.manager, data.id, data.email, data.officeNumber);
             profile.push(manager);
 
 
-            //If individual choose to add more employee, prompt the job role question. otherwise render profile array to html
+            //If individual chooses to add more employee, prompt the job role question again. otherwise render array to html
             if (data.addMore === true) {
                 roleQuestion();
             } else {
