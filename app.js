@@ -142,7 +142,7 @@ function engineer() {
 
         ])
         .then(data => {
-            //Add new inputs to the array
+            //Add inputs to the array
             const engineer = new Engineer(data.engineer, data.id, data.email, data.github);
             profile.push(engineer);
 
@@ -195,7 +195,7 @@ function manager() {
         ])
         .then(data => {
 
-            //Add new inputs to the array
+            //Add inputs to the array
             const manager = new Manager(data.manager, data.id, data.email, data.officeNumber);
             profile.push(manager);
 
